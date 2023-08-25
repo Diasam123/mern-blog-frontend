@@ -40,7 +40,7 @@ const Create = () => {
         formData.append("filename", filename)
         formData.append("image", image)
 
-        await fetch(`http://localhost:5000/upload/image`, {
+        await fetch(`https://backend-k4bq.onrender.com/upload/image`, {
           headers: {
             "Authorization": `Bearer ${token}`
           },
@@ -50,7 +50,7 @@ const Create = () => {
       }
 
       // uploading product 
-      const res = await fetch(`http://localhost:5000/product`, {
+      const res = await fetch(`https://backend-k4bq.onrender.com/product`, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`

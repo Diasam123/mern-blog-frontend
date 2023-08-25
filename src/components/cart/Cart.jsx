@@ -31,7 +31,7 @@ const Cart = () => {
           {products.length > 0 ? products.map((product) => (
               <div key={product._id} className={classes.product}>
                 <div onClick={() =>handleRemoveProduct(product._id)} className={classes.closeBtn}><AiOutlineClose /></div>
-                <img src={`http://localhost:5000/images/${product.img}`} className={classes.img}/>
+                <img src={`https://backend-k4bq.onrender.com/images/${product.img}`} className={classes.img}  alt=""/>
                 <div className={classes.productData}>
                   <h3 className={classes.title}>{product.title}</h3>
                   <div className={classes.productAndQuantity}>

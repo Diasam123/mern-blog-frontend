@@ -17,7 +17,7 @@ const Login = () => {
       e.preventDefault()
 
       try {
-        const res = await fetch(`http://localhost:5000/auth/login`, {
+        const res = await fetch(`https://backend-k4bq.onrender.com/auth/login`, {
           headers: {
             'Content-Type': 'application/json'
           },

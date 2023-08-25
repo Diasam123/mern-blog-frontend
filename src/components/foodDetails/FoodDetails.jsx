@@ -18,7 +18,7 @@ const FoodDetails = () => {
 
   useEffect(() => {
      const fetchFoodDetails = async() => {
-      const res = await fetch(`http://localhost:5000/product/find/${id}`, {
+      const res = await fetch(`https://backend-k4bq.onrender.com/product/find/${id}`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }

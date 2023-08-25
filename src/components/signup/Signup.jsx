@@ -17,7 +17,7 @@ const Signup = () => {
   const handleSignup = async(e) => {
     e.preventDefault()
     try {
-      const res = await fetch(`http://localhost:5000/auth/register`, {
+      const res = await fetch(`https://backend-k4bq.onrender.com/auth/register`, {
         headers: {
           "Content-Type": 'application/json'
         },
